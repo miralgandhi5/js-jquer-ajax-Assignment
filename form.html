@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.1/jquery.form.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+        
+        <form action="webpage.html" class="form-horizontal" name="validateform" id="validateform" method="post">
+
+            <div class="form-group">
+                <div class="row">
+
+                    <label class="control-label  col-sm-4 col-xs-4" for="firstName">First
+                        name*</label>
+
+                    <input type="textbox" class="col-sm-6 col-xs-6" id="firstName" placeholder=""
+                           name="firstName" required>
+                </div>
+                <div class="row">
+                    <label class="control-label  col-sm-4 col-xs-4" for="lastName">Last
+                        name*</label>
+
+                    <input type="textbox" class="col-sm-6 col-xs-6" id="lastName" name="lastName">
+                </div>
+                <div class="row">
+                    <label class="control-label col-sm-4 col-xs-4" for="email">Email*</label>
+
+                    <input type="text" class="col-sm-6 col-xs-6" id="email" name="email" >
+                </div>
+                <div class="row">
+                    <label class="control-label col-sm-4 col-xs-4" for="confirmEmail">Confirm Email*</label>
+
+                    <input type="text" class="col-sm-6 col-xs-6" id="confirmEmail" name="confirmEmail"/>
+                </div>
+                <div class="row">
+                    <label class="control-label col-sm-4 col-xs-4 " for="password">Password*</label>
+
+                    <input type="password" id="password" class="col-sm-6 col-xs-6" name="password" >
+                </div>
+                <div class="row">
+                    <label class="control-label col-sm-4 col-xs-4 " for="gender">Gender*</label>
+
+                    <input type="radio" name="gender" value="male"> Male 
+                    <input type="radio" name="gender" value="female" checked> Female<br>
+
+                </div>
+
+                <div class="row">
+                    <label class="control-label col-sm-4 col-xs-4" for="phone">Phone</label>
+
+                    <input type="number" class="col-sm-6 col-xs-6" id="phone" name="phone">
+
+
+                </div>
+            </div>
+
+           <div class="text-center">
+            <button id="formBtn" type="submit">Register</button>
+        </div>
+        <script src="./validate.js"></script>
+
+        </form>
+
+</body>
+</html>
